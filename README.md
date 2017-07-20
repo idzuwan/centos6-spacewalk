@@ -9,6 +9,13 @@ Dockerfile - Spacewalk 2.6 on Centos 6
 Note: above command will make a copy to the current directory you run the command
 
 Also available on docker.io
+```
+https://hub.docker.com/r/skelator/centos-spacewalk26/
+```
+
+```
+docker pull skelator/centos-spacewalk26
+```
 
 ### Run ###
 ```
