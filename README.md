@@ -48,6 +48,6 @@ docker run -d --privileged=true -p 80:80 -p 443:443 -p 5222:5222 \
  --restart=always \
  -v /opt/data/spacewalk/opt:/opt \
  -v /opt/data/spacewalk/var/satellite:/var/satellite \
- -h "spacewalk.oneshell.local" \
+ -h "spacewalk.local" \
  --name="spacewalk" spacewalk26
 ```
