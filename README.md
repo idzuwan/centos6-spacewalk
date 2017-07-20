@@ -22,7 +22,7 @@ Also available on docker.io
 
 ### How I run the container ###
 
-1. Change this to your own path for me I have /opt/data on LVM disk dedicated for dockers data
+1. Create custom data volumes, change this to your own path for me I have /opt/data on LVM disk dedicated for dockers data
 ```
 export DATA="/opt/data"
 mkdir -p $DATA/spacewalk/opt
