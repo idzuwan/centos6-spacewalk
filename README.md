@@ -36,7 +36,7 @@ mkdir -p $DATA/spacewalk/opt
 mkdir -p $DATA/spacewalk/var/satellite
 ```
 
-2. Copy script and spacewalk.sh from the cloned git repo to our data volumes path
+2. Copy answer.txt and spacewalk.sh from the cloned git repo to our new data volumes path
 ```
 cp -Rp PATH-TO-GIT/docker-spacewalk/conf/answer.txt $DATA/spacewalk/opt/
 cp -Rp PATH-TO-GIT/docker-spacewalk/conf/spacewalk.sh $DATA/spacewalk/opt/
