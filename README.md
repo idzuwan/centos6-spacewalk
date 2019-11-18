@@ -1,6 +1,8 @@
 Dockerfile - Spacewalk 2.6 on Centos 6
 ======================
 
+### NOTE: This repo will no longer be maintained/updated ###
+
 ### Build ###
 ```
 # git clone https://github.com/idzuwan/centos-spacewalk26.git centos-spacewalk26
