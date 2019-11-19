@@ -18,8 +18,8 @@ WORKDIR /opt
 
 # 3. Add the epel, spacewalk, jpackage repository
 ADD conf/jpackage.repo /etc/yum.repos.d/jpackage.repo
-RUN yum install -y epel-release \
-    && yum install -y https://copr-be.cloud.fedoraproject.org/archive/spacewalk/2.6/RHEL/6/x86_64/spacewalk-repo-2.6-0.el6.noarch.rpm
+ADD conf/spacewalk.repo /etc/yum.repos.d/spacewalk.repo
+RUN yum install -y epel-release
 
 # 4. Installation a spacewalk
 ADD conf/answer.txt	/opt/answer.txt
