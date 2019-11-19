@@ -11,6 +11,7 @@
 # 1. Base images
 FROM     centos:centos6
 MAINTAINER Nor Idzuwan Mohammad <zuan@mylinux.net.my>
+LABEL version=1.0.5
 
 # 2. Set the environment variable
 WORKDIR /opt
