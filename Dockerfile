@@ -27,8 +27,9 @@ ADD conf/spacewalk.sh	/opt/spacewalk.sh
 RUN chmod a+x /opt/spacewalk.sh && yum install -y spacewalk-setup-postgresql spacewalk-postgresql
 
 # 5. Supervisor
-RUN yum install -y python-setuptools \
- && easy_install pip && pip install supervisor \
+RUN yum install python-pip \
+ && pip install --upgrade pip \
+ && pip install supervisor \
  && pip install --upgrade meld3==0.6.10 \
  && mkdir /etc/supervisord.d \
  && yum clean all && rm -fr /var/cache/yum
