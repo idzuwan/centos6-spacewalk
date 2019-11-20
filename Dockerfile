@@ -28,7 +28,6 @@ RUN chmod a+x /opt/spacewalk.sh && yum install -y spacewalk-setup-postgresql spa
 
 # 5. Supervisor
 RUN yum install -y python-pip \
- && pip install --upgrade pip \
  && pip install supervisor \
  && pip install --upgrade meld3==0.6.10 \
  && mkdir /etc/supervisord.d \
