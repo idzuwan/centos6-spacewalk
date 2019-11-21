@@ -1,6 +1,8 @@
 Dockerfile - Spacewalk 2.6 on Centos 6
 ======================
 
+Current version: v1.0.8: Spacewalk v2.6 
+
 Update: 21/11/2019
 - since all the old repo moved to copr,I have fixed the installation to point all repo the archive repo, images should still can be build as long as the archive repo exist
 
