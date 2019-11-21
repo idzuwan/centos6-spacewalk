@@ -8,23 +8,23 @@ Update: 21/11/2019
 
 ### Build ###
 ```
-# git clone https://github.com/idzuwan/centos-spacewalk26.git centos-spacewalk26
-# docker build --rm -t centos-spacewalk26 centos-spacewalk26
+# git clone https://github.com/idzuwan/centos6-spacewalk.git centos6-spacewalk
+# docker build --rm -t centos-spacewalk centos6-spacewalk
 ```
 Note: above command will make a copy to the current directory you run the command
 
 Also available on docker.io
 ```
-https://hub.docker.com/r/skelator/centos-spacewalk26/
+https://hub.docker.com/r/skelator/centos6-spacewalk/
 ```
 
 ```
-docker pull skelator/centos-spacewalk26
+docker pull idzuwan/centos6-spacewalk
 ```
 
 ### Run ###
 ```
-# docker run --privileged=true -d --name="spacewalk" centos-spacewalk26
+# docker run --privileged=true -d --name="spacewalk" centos6-spacewalk
 ```
 
 ```
@@ -54,5 +54,5 @@ docker run -d --privileged=true -p 80:80 -p 443:443 -p 5222:5222 \
  -v /opt/data/spacewalk/opt:/opt \
  -v /opt/data/spacewalk/var/satellite:/var/satellite \
  -h "spacewalk.local" \
- --name="spacewalk" spacewalk26
+ --name="spacewalk" centsos6-spacewalk
 ```

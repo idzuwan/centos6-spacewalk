@@ -1,12 +1,12 @@
 #
-# Dockerfile - Spacewalk 2.6
+# Dockerfile - Spacewalk 
 #
 # - Build
-# git clone https://github.com/idzuwan/centos-spacewalk26.git centos-spacewalk26
-# docker build --rm -t centos-spacewalk26 centos-spacewalk26
+# git clone https://github.com/idzuwan/centos6-spacewalk.git centos6-spacewalk
+# docker build --rm -t centos6-spacewalk centos6-spacewalk
 #
 # - Run
-# docker run --privileged=true -d --name="spacewalk" centos-spacewalk26
+# docker run --privileged=true -d --name="spacewalk" centos6-spacewalk
 
 # 1. Base images
 FROM     centos:centos6
