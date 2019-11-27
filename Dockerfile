@@ -19,6 +19,7 @@ WORKDIR /opt
 # 3. Add the epel, spacewalk, jpackage repository
 ADD conf/jpackage.repo /etc/yum.repos.d/jpackage.repo
 ADD conf/spacewalk.repo /etc/yum.repos.d/spacewalk.repo
+RUN echo "sslverify=false" >>/etc/yum.conf
 RUN yum install -y epel-release
 
 # 4. Installation a spacewalk
@@ -28,8 +29,8 @@ RUN chmod a+x /opt/spacewalk.sh && yum install -y spacewalk-setup-postgresql spa
 
 # 5. Supervisor
 RUN yum install -y python-pip \
- && pip install supervisor \
- && pip install --upgrade meld3==0.6.10 \
+ && pip --trusted-host files.pythonhosted.org --trusted-host pypi.org --trusted-host pypi.python.org install supervisor==3.4.0 \
+ && pip --trusted-host files.pythonhosted.org --trusted-host pypi.org --trusted-host pypi.python.org install --upgrade meld3==0.6.10 \
  && mkdir /etc/supervisord.d \
  && yum clean all && rm -fr /var/cache/yum
 ADD conf/supervisord.conf /etc/supervisord.d/supervisord.conf
