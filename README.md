@@ -1,10 +1,9 @@
 Dockerfile - Spacewalk 2.6 on Centos 6
 ======================
 
-Current version: v1.0.8: Spacewalk v2.6 
-
-Update: 21/11/2019
-- since all the old repo moved to copr,I have fixed the installation to point all repo the archive repo, images should still can be build as long as the archive repo exist
+Current version: 
+v1.0.8: Spacewalk v2.6 
+v1.0.9-dev: Spacewalk v2.9
 
 ### Build ###
 ```
@@ -54,5 +53,5 @@ docker run -d --privileged=true -p 80:80 -p 443:443 -p 5222:5222 \
  -v /opt/data/spacewalk/opt:/opt \
  -v /opt/data/spacewalk/var/satellite:/var/satellite \
  -h "spacewalk.local" \
- --name="spacewalk" centsos6-spacewalk
+ --name="spacewalk" centos6-spacewalk
 ```

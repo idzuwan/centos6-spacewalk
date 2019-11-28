@@ -11,16 +11,16 @@
 # 1. Base images
 FROM     centos:centos6
 MAINTAINER Nor Idzuwan Mohammad <zuan@mylinux.net.my>
-LABEL version=1.0.8
+LABEL version=1.0.9-dev
 
 # 2. Set the environment variable
 WORKDIR /opt
 
 # 3. Add the epel, spacewalk, jpackage repository
-ADD conf/jpackage.repo /etc/yum.repos.d/jpackage.repo
-ADD conf/spacewalk.repo /etc/yum.repos.d/spacewalk.repo
 RUN echo "sslverify=false" >>/etc/yum.conf
-RUN yum install -y epel-release
+RUN yum install -y yum-plugin-tmprepo \
+ && yum install -y spacewalk-repo --tmprepo=https://copr-be.cloud.fedoraproject.org/results/%40spacewalkproject/spacewalk-2.9/epel-6-x86_64/repodata/repomd.xml --nogpg \
+ && yum install -y epel-release
 
 # 4. Installation a spacewalk
 ADD conf/answer.txt	/opt/answer.txt
