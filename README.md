@@ -7,14 +7,14 @@ v1.0.9-dev: Spacewalk v2.9
 
 ### Build ###
 ```
-# git clone https://github.com/idzuwan/spacewalk.git spacewalk
-# docker build --rm -t spacewalk spacewalk
+# git clone https://github.com/idzuwan/centos6-spacewalk.git centos6-spacewalk
+# docker build --rm -t centos6-spacewalk spacewalk
 ```
 Note: above command will make a copy to the current directory you run the command
 
 Also available on docker.io
 ```
-https://hub.docker.com/r/skelator/centos6-spacewalk/
+https://hub.docker.com/r/idzuwan/spacewalk/
 ```
 
 ```
