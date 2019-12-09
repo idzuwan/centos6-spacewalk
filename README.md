@@ -1,7 +1,7 @@
 Dockerfile - Spacewalk 2.9 on Centos 6
 ======================
 
-Current version <p>
+Current version: <p>
 v1.0.9: Spacewalk v2.9<br>
 v1.0.9-dev: Spacewalk v2.9
 
