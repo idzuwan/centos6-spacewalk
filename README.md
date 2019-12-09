@@ -1,8 +1,8 @@
-Dockerfile - Spacewalk 2.6 on Centos 6
+Dockerfile - Spacewalk 2.9 on Centos 6
 ======================
 
 Current version: 
-v1.0.8: Spacewalk v2.6 
+v1.0.9: Spacewalk v2.9
 v1.0.9-dev: Spacewalk v2.9
 
 ### Build ###
