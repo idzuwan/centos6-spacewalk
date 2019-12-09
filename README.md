@@ -1,29 +1,29 @@
 Dockerfile - Spacewalk 2.9 on Centos 6
 ======================
 
-Current version: 
-v1.0.9: Spacewalk v2.9
+Current version <p>
+v1.0.9: Spacewalk v2.9<br>
 v1.0.9-dev: Spacewalk v2.9
 
 ### Build ###
 ```
 # git clone https://github.com/idzuwan/centos6-spacewalk.git centos6-spacewalk
-# docker build --rm -t centos-spacewalk centos6-spacewalk
+# docker build --rm -t centos6-spacewalk spacewalk
 ```
 Note: above command will make a copy to the current directory you run the command
 
 Also available on docker.io
 ```
-https://hub.docker.com/r/skelator/centos6-spacewalk/
+https://hub.docker.com/r/idzuwan/spacewalk/
 ```
 
 ```
-docker pull idzuwan/centos6-spacewalk
+docker pull idzuwan/spacewalk
 ```
 
 ### Run ###
 ```
-# docker run --privileged=true -d --name="spacewalk" centos6-spacewalk
+# docker run --privileged=true -d --name="spacewalk" spacewalk
 ```
 
 ```
@@ -53,5 +53,5 @@ docker run -d --privileged=true -p 80:80 -p 443:443 -p 5222:5222 \
  -v /opt/data/spacewalk/opt:/opt \
  -v /opt/data/spacewalk/var/satellite:/var/satellite \
  -h "spacewalk.local" \
- --name="spacewalk" centos6-spacewalk
+ --name="spacewalk" spacewalk
 ```

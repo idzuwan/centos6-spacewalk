@@ -3,10 +3,10 @@
 #
 # - Build
 # git clone https://github.com/idzuwan/centos6-spacewalk.git centos6-spacewalk
-# docker build --rm -t centos6-spacewalk centos6-spacewalk
+# docker build --rm -t centos6-spacewalk spacewalk
 #
 # - Run
-# docker run --privileged=true -d --name="spacewalk" centos6-spacewalk
+# docker run --privileged=true -d --name="spacewalk" spacewalk
 
 # 1. Base images
 FROM     centos:centos6
