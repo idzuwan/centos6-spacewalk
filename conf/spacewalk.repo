@@ -1,6 +1,0 @@
-[spacewalk]
-name=Spacewalk
-baseurl=https://copr-be.cloud.fedoraproject.org/archive/spacewalk/2.6/RHEL/6/$basearch/
-gpgkey=https://copr-be.cloud.fedoraproject.org/archive/spacewalk/RPM-GPG-KEY-spacewalk-2015
-enabled=1
-gpgcheck=1

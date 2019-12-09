@@ -7,6 +7,7 @@ ssl-set-country = US
 ssl-password = spacewalk
 ssl-set-email = root@localhost
 ssl-config-sslvhost = Y
+ssl-set-cnames = spacewalk
 db-backend=postgresql
 db-name=spaceschema
 db-user=spacewalk
